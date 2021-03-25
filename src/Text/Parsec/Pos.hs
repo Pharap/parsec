@@ -106,7 +106,7 @@ updatePosString pos string
     = foldl updatePosChar pos string
 
 -- | Update a source position given a character. If the character is a
--- newline (\'\\n\') or carriage return (\'\\r\') the line number is
+-- newline (\'\\n\') the line number is
 -- incremented by 1. If the character is a tab (\'\t\') the column
 -- number is incremented to the nearest 8'th column, ie. @column + 8 -
 -- ((column-1) \`mod\` 8)@. In all other cases, the column is
